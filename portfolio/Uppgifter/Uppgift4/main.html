@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="anim.css">
+
+    <style>    
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            display: flex;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 100%;
+            height: 100vh;
+            
+            background: #f3f3f3;
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            white-space: nowrap;
+            padding-inline: 1rem;
+            
+            width: 10%;
+            
+            background: #e0e0e1;
+        }
+    
+        .content {
+            display: grid;
+            place-items: center;
+            width: 90%;
+            height: 100%;
+        }
+
+        .parent {
+            position: relative;
+
+            border: 2px solid rgb(168, 168, 216);
+            border-radius: 16px;
+            margin-inline: 1rem; 
+
+            background: repeating-linear-gradient(
+              -45deg,
+              rgba(197, 188, 255, 0.3),
+              rgba(197, 188, 255, 0.3) 1px,
+             transparent 1px,
+             transparent 10px
+            );
+            
+            width: 50%;
+            aspect-ratio: 1;
+        }
+        
+        .child {
+            display: grid;
+            place-items: center;
+
+            color: white;
+            background: rgb(59, 5, 236);
+            border-radius: 14px;
+
+            width: 50%;
+
+            aspect-ratio: 1;
+        }
+    
+        .title {
+            text-transform: uppercase;
+
+            text-shadow: -1px -1px 0 #8d8c8c,
+                         1px -1px 0 #8d8c8c, 
+                         -1px 1px 0 #8d8c8c, 
+                         1px 1px 0 #8d8c8c;
+
+            color: rgb(224, 224, 225);
+            rotate: -90deg;
+            
+            font-size: clamp(.5rem, 4rem, 6vh);
+        }
+    </style>
+
+    <title>Hello</title>  
+</head>
+<body>
+    <aside class="left-column">
+        <h1 class="title">Hello</h1>
+    </aside>
+    <div class="content">
+        <div class="parent">
+            <div class="child">
+                <p>LÅDA</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

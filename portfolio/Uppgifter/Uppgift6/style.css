@@ -1,0 +1,53 @@
+header{
+    background-image: linear-gradient(to right, grey, rgb(91, 86, 86))
+}
+
+.topheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-inline: auto;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.primary-navigation{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+main{
+  display: flex;
+  gap: 2rem;
+  
+  width: 80%;
+
+  margin-inline: auto;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+}
+
+a:hover {
+    color: floralwhite;
+    background-color: black;
+    border-radius: 2rem;
+}
+
+a {
+    text-decoration: none;
+    padding: 1rem;
+}

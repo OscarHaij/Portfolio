@@ -1,0 +1,16 @@
+.content{
+    height: 20vh;
+}
+
+h1 {
+    color:lightblue;
+    background-color: darkblue;
+    padding: 0,5rem
+    
+}
+
+.first {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}

@@ -1,0 +1,19 @@
+html{scroll-behavior: smooth;}
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: yellow;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    text-transform: uppercase;
+}
